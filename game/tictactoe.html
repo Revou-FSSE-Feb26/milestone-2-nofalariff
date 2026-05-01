@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TicTacToe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#050505] text-white flex flex-col items-center justify-center min-h-screen">
+
+    <h1 class="text-3xl font-bold mb-6">Tic Tac Toe</h1>
+
+    <div id="board" class="grid grid-cols-3 gap-2">
+        <div class="cell w-20 h-20 bg-gray-800 flex items-center justify-center text-2xl" data-index="0"></div>
+        <div class="cell w-20 h-20 bg-gray-800 flex items-center justify-center text-2xl" data-index="1"></div>
+        <div class="cell w-20 h-20 bg-gray-800 flex items-center justify-center text-2xl" data-index="2"></div>
+        <div class="cell w-20 h-20 bg-gray-800 flex items-center justify-center text-2xl" data-index="3"></div>
+        <div class="cell w-20 h-20 bg-gray-800 flex items-center justify-center text-2xl" data-index="4"></div>
+        <div class="cell w-20 h-20 bg-gray-800 flex items-center justify-center text-2xl" data-index="5"></div>
+        <div class="cell w-20 h-20 bg-gray-800 flex items-center justify-center text-2xl" data-index="6"></div>
+        <div class="cell w-20 h-20 bg-gray-800 flex items-center justify-center text-2xl" data-index="7"></div>
+        <div class="cell w-20 h-20 bg-gray-800 flex items-center justify-center text-2xl" data-index="8"></div>
+    </div>
+
+    <p id="status" class="mt-4"></p>
+
+    <button id="restart" class="mt-4 px-4 py-2 bg-blue-600 rounded">
+        Restart
+    </button>
+
+    <button onclick="window.location.href='../index.html'" class="mt-2 text-gray-400">
+        ← Back
+    </button>
+
+    <script type="module" src="../js/tictactoe/app.js"></script>
+</body>
+
+</html>
