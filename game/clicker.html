@@ -11,24 +11,34 @@
 
     <h1 class="text-3xl font-bold mb-4">Clicker Game</h1>
 
-    <!-- Score -->
-    <p id="score" class="text-xl mb-2">Score: 0</p>
+    <div id="start-screen" class="mb-6 text-center">
+        <p class="mb-2">Masukkan nama untuk mulai:</p>
+        <input id="nameInput" class="px-3 py-2 rounded text-black" placeholder="Nama kamu" />
+        <button id="startBtn" class="ml-2 px-4 py-2 bg-green-600 rounded">Start Game</button>
+    </div>
 
-    <!-- Timer -->
-    <p id="timer" class="mb-6">Time: 10</p>
+    <div id="game-screen" class="hidden">
+        <p id="greeting" class="mb-4 text-lg"></p>
 
-    <!-- Big Button -->
-    <button id="clickBtn" class="w-40 h-40 rounded-full bg-blue-600 text-2xl font-bold hover:scale-110 transition">
-        CLICK
-    </button>
+        <!-- Score -->
+        <p id="score" class="text-xl mb-2">Score: 0</p>
 
-    <!-- Result -->
-    <p id="result" class="mt-6 text-xl"></p>
+        <!-- Timer -->
+        <p id="timer" class="mb-6">Time: 10</p>
 
-    <!-- Restart -->
-    <button id="restart" class="mt-4 px-4 py-2 bg-gray-700 rounded">
-        Restart
-    </button>
+        <!-- Big Button -->
+        <button id="clickBtn" class="w-40 h-40 rounded-full bg-blue-600 text-2xl font-bold hover:scale-110 transition">
+            CLICK
+        </button>
+
+        <!-- Result -->
+        <p id="result" class="mt-6 text-xl"></p>
+
+        <!-- Restart -->
+        <button id="restart" class="mt-4 px-4 py-2 bg-gray-700 rounded">
+            Restart
+        </button>
+    </div>
 
     <!-- Back -->
     <button onclick="window.location.href='../index.html'" class="mt-2 text-gray-400">

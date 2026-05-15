@@ -11,13 +11,22 @@
 
     <h1 class="text-3xl font-bold mb-6">Rock Paper Scissors</h1>
 
-    <div class="flex gap-4">
-        <button data-choice="rock">✊</button>
-        <button data-choice="paper">✋</button>
-        <button data-choice="scissors">✌️</button>
+    <div id="start-screen" class="mb-6 text-center">
+        <p class="mb-2">Masukkan nama untuk mulai:</p>
+        <input id="nameInput" class="px-3 py-2 rounded text-black" placeholder="Nama kamu" />
+        <button id="startBtn" class="ml-2 px-4 py-2 bg-green-600 rounded">Start Game</button>
     </div>
 
-    <p id="result" class="mt-6"></p>
+    <div id="game-screen" class="hidden">
+        <p id="greeting" class="mb-4 text-lg"></p>
+        <div class="flex gap-4">
+            <button data-choice="rock" disabled>✊</button>
+            <button data-choice="paper" disabled>✋</button>
+            <button data-choice="scissors" disabled>✌️</button>
+        </div>
+
+        <p id="result" class="mt-6"></p>
+    </div>
 
     <button onclick="window.location.href='../index.html'" class="mt-4 text-gray-400">
         ← Back
