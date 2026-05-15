@@ -4,9 +4,14 @@ export function play(choice) {
 
   if (choice === cpu) return { result: "Draw", cpu };
 
-  if ((choice === "rock" && cpu === "scissors") || (choice === "paper" && cpu === "rock") || (choice === "scissors" && cpu === "paper")) {
-    return { result: "Win", cpu };
+  switch (choice) {
+    case "rock":
+      return { result: cpu === "scissors" ? "Win" : "Lose", cpu };
+    case "paper":
+      return { result: cpu === "rock" ? "Win" : "Lose", cpu };
+    case "scissors":
+      return { result: cpu === "paper" ? "Win" : "Lose", cpu };
+    default:
+      return { result: "Lose", cpu };
   }
-
-  return { result: "Lose", cpu };
 }
